@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-sap-bg text-gray-900;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 bg-sap-blue text-white rounded-lg hover:bg-blue-800 transition-colors font-medium;
+  }
+
+  .btn-secondary {
+    @apply px-4 py-2 bg-gray-200 text-gray-900 rounded-lg hover:bg-gray-300 transition-colors font-medium;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-md p-6;
+  }
+
+  .input-field {
+    @apply px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sap-blue;
+  }
+
+  .status-valid {
+    @apply bg-green-100 text-sap-success border border-sap-success rounded px-2 py-1;
+  }
+
+  .status-warning {
+    @apply bg-orange-100 text-sap-warning border border-sap-warning rounded px-2 py-1;
+  }
+
+  .status-error {
+    @apply bg-red-100 text-sap-error border border-sap-error rounded px-2 py-1;
+  }
+}

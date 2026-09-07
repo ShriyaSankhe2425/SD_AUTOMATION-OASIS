@@ -1,0 +1,22 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+output/
+.pytest_cache/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Sample PO documents and reference master-data dumps — excluded from this push
+/1.pdf
+/2.pdf
+/3.pdf
+/4.pdf
+/1.png
+/2.png
+/3.png
+/4.png
+/jp_data/
+/cn_data/
